@@ -4,9 +4,22 @@
         @include span-columns(6);
 
         list-style-type: none;
-        padding: 0;
+        padding: 0 0 15px 0;
         margin: 2px;
         position: relative;
+        text-align: center;
+
+        .price {
+            margin-bottom: 10px;
+        }
+
+        .add_to_cart_button {
+            font-size: 10px;
+
+            @include media($small-screen-up) {
+                font-size: 16px;
+            }
+        }
 
         @include media ($small-screen-up) {
             @include span-columns(4);
@@ -17,90 +30,6 @@
 
     }
 
-    /* ## Product Overlay
-    --------------------------------------------- */
-
-    .product-img-wrapper {
-    	height: 100%;
-    	position: relative;
-    	overflow: hidden;
-    }
-
-    .product-overlay {
-    	background: rgba(44,46,49,.75);
-    	height: 100%;
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	-webkit-transition: all 0.5s ease-in-out;
-    	-moz-transition:    all 0.5s ease-in-out;
-    	-ms-transition:     all 0.5s ease-in-out;
-    	-o-transition:      all 0.5s ease-in-out;
-    	transition:         all 0.5s ease-in-out;
-    	text-align: center;
-    	z-index:3;
-    	padding: 40px 20px;
-    	opacity: 0;
-    }
-
-    .product-overlay .overlay-wrap {
-    	position: relative;
-    	z-index: 3;
-    }
-
-    .product-img-wrapper:hover .product-overlay {
-    	opacity: 1;
-    }
-
-    .product-img-wrapper img {
-    	-moz-transition: all 1s ease-in-out;
-    	-webkit-transition: all 1s ease-in-out;
-    	transition: all 1s ease-in-out;
-    }
-
-    ul.products li.product .star-rating {
-    	color: #eee;
-    	text-align: center;
-    	right: auto;
-    	bottom: 40px;
-    	position: absolute;
-    	left: 50%;
-    	margin-left: -2.85em;
-    	z-index: 1;
-    }
-
-    .star-rating {
-    	width: 5.7em;
-    }
-
-    .woocommerce-product-rating .star-rating {
-    	display: inline-block;
-    }
-
-    .star-rating span:before {
-    	content: "\f005\00a0\f005\00a0\f005\00a0\f005\00a0\f005";
-    }
-
-    .star-rating:before {
-    	content: "\f005\00a0\f005\00a0\f005\00a0\f005\00a0\f005";
-    	opacity: .3;
-    }
-
-    ul.products li.product .added_to_cart {
-    	color: #fff;
-    }
-
-    .overlay-link {
-    	display: block;
-    	content: "";
-    	width: 100%;
-    	height: 100%;
-    	z-index: 2;
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    }
 
 
 }
