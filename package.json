@@ -1,0 +1,11 @@
+{
+  "name": "utilitypro-woocommerce",
+  "version": "1.0.0",
+  "description": "Makes Utility Pro compatible with Woocommerce",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Mcintosh",
+  "license": "ISC"
+}
