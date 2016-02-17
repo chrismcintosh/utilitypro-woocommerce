@@ -10,6 +10,7 @@ This plugin aims to add to the goodness by adding the styles and functions neede
 ### Making Modifications
 1. Navigate to the root directory of the plugin in your terminal
 2. Make sure all the dependencies for gulp are installed by running **npm install**
+3. Run gulp from the root of the plugin by simply typing **gulp**
 3. Make your style modifications in **assets**
 4. Make functionality changes in **utilitypro-woocommerce.php** or the **woocommerce.php** file in your child theme directory.
 
