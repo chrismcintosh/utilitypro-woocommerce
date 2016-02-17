@@ -1,4 +1,5 @@
-.post-type-archive-product {
+.post-type-archive-product,
+.tax-product_cat {
 
     ul.products li.product {
         @include span-columns(6);
