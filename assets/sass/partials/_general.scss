@@ -4,3 +4,14 @@
     General Woocommerce Styles
 
 ************************************/
+
+
+.woocommerce-page.content-sidebar {
+    #container {
+        @include span-columns(8);
+    }
+    .sidebar-primary {
+        @include span-columns(4);
+        @include omega();
+    }
+}
