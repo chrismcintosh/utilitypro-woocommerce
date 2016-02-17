@@ -5,10 +5,19 @@
 
 ************************************/
 
-
 // Import Libraries
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
 
+// Import Variales
+@import "partials/variables";
+
 // Import Partials
 @import "partials/general";
+@import "partials/star-rating";
+@import "partials/sticker";
+@import "partials/products-archive";
+
+
+// todo
+// import notices when ready

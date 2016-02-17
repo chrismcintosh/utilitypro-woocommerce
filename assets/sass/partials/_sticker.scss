@@ -1,0 +1,18 @@
+.up-sticker {
+    width: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    color: $white;
+    text-align: center;
+}
+
+.product span.onsale {
+    @extend .up-sticker;
+    background-color: rgba($blue, 0.7);
+}
+
+.product span.soldout {
+    @extend .up-sticker;
+    background-color: rgba($red, 0.7);
+}

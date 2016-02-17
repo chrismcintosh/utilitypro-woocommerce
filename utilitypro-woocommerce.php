@@ -16,7 +16,37 @@
     }
 
 
+    //Add Account Settings and Cart Indicator Bar After Header
+    add_action('genesis_header_right', 'up_cart_indicator');
+    function up_cart_indicator() {
+    	?>
+            <div class="up-cart-indicator">
+                <a class="cart-contents button" >
+                </a>
+            </div>
+        <?php
 
+    }
+
+
+
+    // Ajax cart button in header
+    	add_filter('add_to_cart_fragments', 'sby_woo_cart_contents');
+    	function sby_woo_cart_contents( $fragments ) {
+    		global $woocommerce;
+    		ob_start();
+
+    		?>
+    			<a class="cart-contents button" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart'); ?>">
+    				<i class="fa fa-shopping-cart"></i>
+    				<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count), $woocommerce->cart->cart_contents_count);?>
+    				- <?php echo $woocommerce->cart->get_cart_total(); ?>
+    			</a>
+    		<?php
+
+    		$fragments['a.cart-contents'] = ob_get_clean();
+    		return $fragments;
+    	}
 
 
 
