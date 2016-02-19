@@ -11,16 +11,16 @@
 
 
 
+  /**************************************
+     Force Full Width Pages
+  ***************************************/
+  if ( is_product() ) {
+      add_filter('genesis_pre_get_option_site_layout', 'up_full_width_pages');
+      function up_full_width_pages() {
+              return 'full-width-content';
+          }
 
-
- /**************************************
-    Force Full Width Pages
- ***************************************/
- if ( is_product() || is_cart() || is_checkout() ) {
-     add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
-  }
-
-
+   }
 
 
 /**************************************
@@ -107,8 +107,6 @@
 
     // Move the add to cart button on product loops
     remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-
-
 
 
 

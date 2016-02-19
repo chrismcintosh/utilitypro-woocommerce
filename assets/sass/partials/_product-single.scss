@@ -13,7 +13,7 @@
 
         list-style-type: none;
         padding: 0 0 15px 0;
-        margin: 2px;
+        margin: 1px;
         position: relative;
         text-align: center;
 
@@ -68,8 +68,11 @@
 		max-width: none;
 	}
 
-	.related.products {
+
+	.related.products,
+    .upsells.products {
 		background-color: $blue;
+        clear: both;
 		padding: 5%;
 		text-align: center;
 
