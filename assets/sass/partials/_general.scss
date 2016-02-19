@@ -24,6 +24,24 @@
     }
 }
 
+.woocommerce-page.sidebar-content {
+    #container {
+        @include span-columns(12);
+
+        @include media($small-screen-up) {
+            @include span-columns(8);
+            @include omega();
+        }
+    }
+    .sidebar-primary {
+        @include span-columns(12);
+
+        @include media ($small-screen-up) {
+            @include span-columns(4);
+        }
+    }
+}
+
 .content {
     margin-bottom: 40px;
 }
@@ -52,5 +70,25 @@
 
     @include media($small-screen-up) {
         margin-top: 0px;
+    }
+}
+
+
+
+
+@mixin mediaright() {
+	@include clearfix();
+
+	img {
+		float: right;
+		height: auto;
+	}
+}
+
+
+
+.woocommerce-checkout {
+    .entry-content ul > li.wc_payment_method  {
+            list-style-type: none;
     }
 }

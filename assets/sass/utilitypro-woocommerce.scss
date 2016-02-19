@@ -9,8 +9,9 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
 
-// Import Variales
+// Import Variables & Mixins
 @import "partials/variables";
+@import "partials/mixins";
 
 // Import Partials
 @import "partials/general";
@@ -19,3 +20,4 @@
 @import "partials/product-overlay";
 @import "partials/products-archive";
 @import "partials/product-single";
+@import "partials/cart-page";

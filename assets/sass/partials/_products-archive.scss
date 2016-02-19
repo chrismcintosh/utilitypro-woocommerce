@@ -1,3 +1,10 @@
+/***********************************
+************************************
+
+        Product Archive
+
+************************************/
+
 .post-type-archive-product,
 .tax-product_cat {
 
@@ -6,7 +13,7 @@
 
         list-style-type: none;
         padding: 0 0 15px 0;
-        margin: 2px;
+        margin: 10px 2px;
         position: relative;
         text-align: center;
 
@@ -25,7 +32,7 @@
         @include media ($small-screen-up) {
             @include span-columns(4);
 
-            margin: 4px;
+            margin: 10px 4px;
         }
 
 

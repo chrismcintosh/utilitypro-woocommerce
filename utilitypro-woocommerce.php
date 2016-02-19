@@ -52,7 +52,23 @@
 
 
 
+        add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
+
+        /**
+         * WooCommerce Extra Feature
+         * --------------------------
+         *
+         * Change number of related products on product page
+         * Set your own value for 'posts_per_page'
+         *
+         */
+        // add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+        //   function jk_related_products_args( $args ) {
+        // 	$args['posts_per_page'] = 4; // 4 related products
+        // 	$args['columns'] = 4; // arranged in 2 columns
+        // 	return $args;
+        // }
 
 
 ?>

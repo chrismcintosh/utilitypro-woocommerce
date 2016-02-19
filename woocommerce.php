@@ -14,16 +14,11 @@
 
 
  /**************************************
-    Force Product Pages Full Width
+    Force Full Width Pages
  ***************************************/
-  	add_filter('genesis_pre_get_option_site_layout', 'product_full_width');
-  	function product_full_width($layout) {
-  		if (is_product()) {
-  			$layout = 'full-width-content';
-  			return $layout;
-  		}
-  	}
-
+ if ( is_product() || is_cart() || is_checkout() ) {
+     add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+  }
 
 
 
